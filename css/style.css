@@ -1,0 +1,133 @@
+* { 
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --red: #e50101;
+  --blue:#011542;
+  --white: #fff;
+  --ash: #f5f7fa;
+  --dark-ash: #3e4555;
+  --cream-green: #d7f1f3ba;
+}
+
+.color-red { color: var(--red) !important; }
+.color-blue { color: var(--blue) !important; }
+.color-white { color: var(--white); }
+
+.bg-color-blue { background-color: var(--blue); }
+.bg-color-red { background-color: var(--red); }
+.bg-color-white { background-color: var(--white); }
+.bg-color-ash { background-color: var(--ash); }
+.bg-color-dark-ash { background-color: var(--dark-ash); }
+.bg-color-cream-green { background-color: var(--cream-green); }
+
+.logo {
+  width: 60px;
+  height: 40px;
+}
+.heading-box { 
+  padding: 5px 20px;
+  background: var(--dark-ash);
+  color: var(--white);
+}
+.nav-wrapper {
+  position: static;
+  z-index: 99999999999999999999999999999;
+  /* -webkit-box-shadow: 0px 11px 6px -8px rgba(179,179,179,0.68);
+  -moz-box-shadow: 0px 11px 6px -8px rgba(179,179,179,0.68);
+  box-shadow: 0px 11px 6px -8px rgba(179,179,179,0.68); */
+}
+
+.navbar-toggler {
+  background-color: #000;
+  color: #fff !important;
+  padding-top: 10px;
+}
+
+.welcome, .about-banner { 
+  display: flex;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.welcome-img > .img-fluid {
+  position: static;
+  z-index: 999;
+}
+
+ul.top-nav>li>a {
+  color: var(--white) !important;
+  background-color: transparent;
+  font-size: .9em !important;
+}
+
+.top {
+  min-height: 100vh;
+  background: var(--blue);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lead {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+.sub-lead {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.team { 
+  display: flex;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.img-rounded {
+  border-radius: 10px;
+}
+
+.why-us, .why-us-text { min-height: 400px; }
+.why-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 0px !important;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--red);
+}
+
+@media (max-width: 428px) {
+  .nav-wrapper {
+    position: static;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .welcome {
+    padding: 50px 0 0 0;
+  }
+
+  .lead {
+    font-size: 2em;
+  }
+}
